@@ -26,13 +26,6 @@ xdo_keymaps={127: 'BackSpace', \
 stdscr = cstdscr.start()
 
 try:
-    stdscr.addstr("test")
-    #avail, old = cs.mousemask(cs.BUTTON1_CLICKED + cs.BUTTON1_PRESSED + cs.BUTTON1_RELEASED)
-    #cs.curs_set(1)
-    #avail, old = cs.mousemask(cs.ALL_MOUSE_EVENTS)
-    avail, old = cs.mousemask(cs.REPORT_MOUSE_POSITION)
-    stdscr.addstr(str(avail) + ":" + str(old) + ">" + str(cs.KEY_MOUSE) + "=")
-    
     key = 0
     while (key != cs.KEY_F10):
         key = stdscr.getch()
