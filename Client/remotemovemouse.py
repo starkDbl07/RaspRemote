@@ -4,7 +4,8 @@ import socket
 import subprocess
 from ctypes import *
 
-r_addr = ('192.168.1.26', 6001)
+#r_addr = ('192.168.1.26', 6001)
+r_addr = ('raspberrypi.local.', 6001)
 r_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 #libxdo = CDLL('libxdo.so.2')
